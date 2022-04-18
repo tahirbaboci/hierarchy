@@ -1,7 +1,7 @@
 # Documentation 
 
 ### Introduction
-Help HR manager Personia get a grasp of her ever-changing company’s hierarchy! Every week
+Help HR manager get a grasp of her ever-changing company’s hierarchy! Every week
 we receives a JSON of employees and their supervisors from her demanding CEO,
 who keeps changing his mind about how to structure his company. We wants a tool to help
 them better understand the employee hierarchy and respond to employee’s queries about who
@@ -40,17 +40,17 @@ POST: http://localhost:8080/employee/hierarchy
 Body: 
 
 {
-  "Pete": "Nicku",
-  "Barbara": "Nicku",
-  "Nicku": "Sophie",
-  "Sophie": "Jonas"
+  "A": "B",
+  "C": "B",
+  "B": "D",
+  "D": "E"
 }
 ```
 POST: http://localhost:8080/employee/supervisor
 ```
 Body:
 
-Barbara
+B
 ```
 GET: http://localhost:8080/employee/structuredHierarchy
 
